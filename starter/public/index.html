@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- the page becomes responsive on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- favicon -->
+    <!-- favicon????????????????????????? -->
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
     <!-- font awesome -->
     <link
@@ -15,33 +16,38 @@
     <link rel="stylesheet" href="./normalize.css" />
     <!-- main css -->
     <link rel="stylesheet" href="./main.css" />
-    <title>Task Manager</title>
+    <!-- tab title -->
+    <title>To Do List</title>
   </head>
   <body>
+    <!-- section for the name and input of the task -->
     <form class="task-form">
-      <h4>task manager</h4>
+      <h4>To Do List</h4>
       <div class="form-control">
         <input
           type="text"
           name="name"
           class="task-input"
-          placeholder="e.g. wash dishes"
+          placeholder="e.g. take out the trash"
         />
         <button type="submit" class="btn submit-btn">submit</button>
       </div>
       <div class="form-alert"></div>
     </form>
+    <!-- section for the tasks inserted -->
     <section class="tasks-container">
       <p class="loading-text">Loading...</p>
       <div class="tasks"></div>
     </section>
-    <!-- axios -->
+    
+    <!-- loads acios for HTTP requests-->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
       integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <!-- javascript code -->
     <script src="./browser-app.js"></script>
   </body>
 </html>

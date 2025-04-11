@@ -3,45 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- the page becomes responsive on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- favicon -->
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
-    <!-- normalize -->
+    <!-- normalize css -->
     <link rel="stylesheet" href="./normalize.css" />
-    <!-- main  -->
+    <!-- main css -->
     <link rel="stylesheet" href="./main.css" />
-
+    <!-- tab title -->
     <title>Edit Task</title>
   </head>
   <body>
+    <!-- wraps all the content for layout and spacing of tasks -->
     <div class="container">
       <form class="single-task-form">
         <h4>Edit Task</h4>
+        <!-- Task ID -->
         <div class="form-control">
           <label>Task ID</label>
           <p class="task-edit-id"></p>
         </div>
+        <!-- name of the task and edit section-->
         <div class="form-control">
           <label for="name">Name</label>
           <input type="text" name="name" class="task-edit-name" />
         </div>
+        <!-- completed status and edit-->
         <div class="form-control">
           <label for="completed">completed</label>
           <input type="checkbox" name="completed" class="task-edit-completed" />
         </div>
+        <!-- button to confirm the edit -->
         <button type="submit" class="block btn task-edit-btn">edit</button>
         <div class="form-alert"></div>
       </form>
+      <!-- link to return to main page -->
       <a href="index.html" class="btn back-link">back to tasks</a>
     </div>
-    <!-- axios -->
+    <!-- loads acios for HTTP requests-->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
       integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <!-- js -->
+    <!-- javascript code -->
     <script src="./edit-task.js"></script>
   </body>
 </html>
