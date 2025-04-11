@@ -1,6 +1,7 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose') //importing monhoose library for MongoDB
 
-const TaskSchema = new mongoose.Schema({
+//each data must have a name and a status with specific conditions
+const TaskSchema = new mongoose.Schema({ 
   name: {
     type: String,
     required: [true, 'must provide name'],

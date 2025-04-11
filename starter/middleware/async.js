@@ -1,3 +1,4 @@
+//function to not repeat try{} catch{error}
 const asyncWrapper = (fn) => {
   return async(req, res, next) => {
     try {
